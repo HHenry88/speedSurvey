@@ -1,0 +1,49 @@
+<body>
+<div class="container">
+  <div class="mainquestion col-xs-11">
+
+    <form ng-submit="question.buttonQuestionClicked(newQuestion)" class="pull-left">
+      <fieldset class="form-group">
+        <div class="questiontitle row">
+          <label class="control-label">Question:</label>
+          <input type="text" placeholder="Type your question here" ng-model="question.newQuestion.aQuestion" class="form-control col-xs-6" required/>
+        </div>
+      </fieldset>
+      <fieldset class="questionOptions form-group">
+        <div class="control-label option1 row">
+          <label>1.</label>
+          <input type="text" placeholder="Type an option" ng-model="question.newQuestion.option1.option" class="form-control"/>
+        </div>
+        <div class="control-label option2 row">
+          <label>2.</label>
+          <input type="text" placeholder="Type an option" ng-model="question.newQuestion.option2.option" class="form-control"/>
+        </div>
+        <div class="control-label option3 row">
+          <label>3.</label>
+          <input type="text" placeholder="Type an option" ng-model="question.newQuestion.option3.option" class="form-control"/>
+        </div>
+        <div class="control-label option4 row">
+          <label>4.</label>
+          <input type="text" placeholder="Type an option" ng-model="question.newQuestion.option4.option" class="form-control"/>
+        </div>
+      </fieldset>
+        <div class="questionButton row">
+          <button type="submit" class="btn btn-danger pull-left">Create</button>
+        </div>
+    </form>
+
+    <div class="image">
+      <img src="surveys-md.png" alt="survey" class="img-responsive pull-right col-xs-4">
+    </div>
+
+    <div class="directions col-xs-12">
+      <p><strong><u>Step One:</u></strong>  Write a question.</p>
+      <p><strong><u>Step Two:</u></strong>  Make up to 4 options.</p>
+      <p><strong><u>Step Three:</u></strong>  Click "Create".</p>
+      <p><strong><u>Step Four:</u></strong>  Share your link survey with others!</p>
+    </div>
+  </div>
+
+
+</div>
+</body>

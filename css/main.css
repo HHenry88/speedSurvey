@@ -1,0 +1,44 @@
+body {
+  background-color: #414857;
+  color: #fff;
+}
+
+.headerTitle{
+  color:#fff;
+}
+
+.pickVote {
+  padding-top: 3%;
+}
+
+.totalVotes {
+  margin: 20px 0;
+}
+.graph{
+  padding:5%;
+}
+
+.bar {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.7)
+}
+
+.directions{
+  margin-top: 20px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.footer{
+  bottom:0;
+  color: #fff;
+  margin-top: 10%%;
+  width: 100%;
+}
+
+.chart-options {
+  color: white;
+}

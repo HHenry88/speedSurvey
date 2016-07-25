@@ -1,0 +1,41 @@
+<body class="answerPage">
+  <div class="container">
+    <div class="mainQuestion">
+      <div class="questionTitle row form-group">
+        <h1>{{answer.Answer.aQuestion}}</h1>
+        <div ng-repeat="option in answer.Answer" ng-hide="answer.hide">
+          <div class="row pickVote" ng-if="option.option.length > 0">
+            <div class="pick col-xs-5">
+              <p>{{option.option}}</p>
+            </div>
+            <div class="vote col-xs-2">
+              <button class="btn btn-sm btn-success"ng-click="answer.addVote(option)">Vote!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="links">
+          <p>Share your survey:<br/> <strong>http://speedsurvey.rf.gd/?ckattempt=1#/answer/{{answer.id}}</strong></p>
+          <p><a href="/">Make a new question</a></p>
+        </div>
+
+        <div class="totalVotes text-center">
+          <p>Total Votes: {{answer.sum}}</p>
+        </div>
+
+        <div class="graphs row" ng-show="answer.hide">
+          <div class="pie">
+          <canvas id="pie" class="chart chart-pie"
+          chart-data="answer.data" chart-labels="answer.labels" chart-options="answer.options" height="300" width="1000">
+          </canvas>
+          </div>
+          <div class="bar">
+          <canvas id="bar" class="chart chart-bar" chart-type="type"
+            chart-data="answer.data" chart-labels="answer.labels" chart-options="answer.options" height="100" width="900">
+          </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
